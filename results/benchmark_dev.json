@@ -1,0 +1,1576 @@
+{
+  "index": {
+    "files": 6,
+    "chunks": 52,
+    "failed": {},
+    "embed_seconds": 1.073708111999963,
+    "total_seconds": 1.21066676800001,
+    "bm25_build_seconds": 0.01044307800009392,
+    "embedder_parameters": 33360000,
+    "reranker_parameters": 278044417,
+    "backend_memory_mb": 976
+  },
+  "results": {
+    "vector": {
+      "summary": {
+        "P@1": 0.875,
+        "P@3": 0.3333,
+        "P@5": 0.2,
+        "R@1": 0.875,
+        "R@3": 1.0,
+        "R@5": 1.0,
+        "MRR": 0.9375,
+        "NDCG@5": 0.9539,
+        "p50_ms": 25.2,
+        "p95_ms": 28.7,
+        "server_p50_ms": 18.9,
+        "server_p95_ms": 21.0,
+        "mean_step_ms": {
+          "dense": 3.1,
+          "embed": 16.0
+        }
+      },
+      "by_type": {
+        "exact_id": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 25.9,
+          "p95_ms": 28.6,
+          "server_p50_ms": 19.4,
+          "server_p95_ms": 20.9,
+          "mean_step_ms": {
+            "dense": 3.1,
+            "embed": 15.9
+          }
+        },
+        "negation": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 24.4,
+          "p95_ms": 25.6,
+          "server_p50_ms": 17.9,
+          "server_p95_ms": 18.6,
+          "mean_step_ms": {
+            "dense": 3.0,
+            "embed": 14.8
+          }
+        },
+        "numeric": {
+          "P@1": 0.5,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 0.5,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 0.75,
+          "NDCG@5": 0.8155,
+          "p50_ms": 25.1,
+          "p95_ms": 26.8,
+          "server_p50_ms": 18.5,
+          "server_p95_ms": 19.8,
+          "mean_step_ms": {
+            "dense": 3.0,
+            "embed": 15.5
+          }
+        },
+        "semantic": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 26.6,
+          "p95_ms": 35.7,
+          "server_p50_ms": 19.6,
+          "server_p95_ms": 29.1,
+          "mean_step_ms": {
+            "dense": 3.4,
+            "embed": 17.8
+          }
+        }
+      },
+      "queries": [
+        {
+          "id": "d01",
+          "type": "exact_id",
+          "query": "What does clause TEP-4.2.2 say?",
+          "relevant": [
+            "TEP-4.2.2"
+          ],
+          "retrieved": [
+            "TEP-4.2.2",
+            "TEP-4.2.1",
+            "TEP-4.1",
+            "TEP-2.2",
+            "TEP-1.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            28.1,
+            26.5,
+            28.8
+          ],
+          "server_ms": [
+            21.1,
+            19.7,
+            20.3
+          ],
+          "steps_ms": [
+            {
+              "embed": 17.54,
+              "dense": 3.57
+            },
+            {
+              "embed": 16.79,
+              "dense": 2.89
+            },
+            {
+              "embed": 16.79,
+              "dense": 3.48
+            }
+          ]
+        },
+        {
+          "id": "d02",
+          "type": "negation",
+          "query": "Where is hot work prohibited?",
+          "relevant": [
+            "HWP-3.2"
+          ],
+          "retrieved": [
+            "HWP-3.2",
+            "HWP-3.1",
+            "HWP-3.3",
+            "HWP-1.1",
+            "HWP-4.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            25.8,
+            23.0,
+            24.5
+          ],
+          "server_ms": [
+            17.7,
+            16.0,
+            18.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.51,
+              "dense": 3.19
+            },
+            {
+              "embed": 13.41,
+              "dense": 2.6
+            },
+            {
+              "embed": 15.8,
+              "dense": 2.9
+            }
+          ]
+        },
+        {
+          "id": "d03",
+          "type": "numeric",
+          "query": "Who must approve an expense of INR 20,000?",
+          "relevant": [
+            "TEP-4.2.2"
+          ],
+          "retrieved": [
+            "TEP-4.2.3",
+            "TEP-4.2.2",
+            "TEP-4.2.1",
+            "TEP-4.1",
+            "TEP-6.2"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            25.2,
+            23.5,
+            26.5
+          ],
+          "server_ms": [
+            19.0,
+            17.5,
+            19.2
+          ],
+          "steps_ms": [
+            {
+              "embed": 16.23,
+              "dense": 2.75
+            },
+            {
+              "embed": 14.26,
+              "dense": 3.28
+            },
+            {
+              "embed": 16.05,
+              "dense": 3.12
+            }
+          ]
+        },
+        {
+          "id": "d04",
+          "type": "semantic",
+          "query": "How long does someone have to keep watching for fire after welding is done?",
+          "relevant": [
+            "HWP-4.1"
+          ],
+          "retrieved": [
+            "HWP-4.1",
+            "HWP-4.3",
+            "IRS-2.3",
+            "HWP-2.2",
+            "HWP-4.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            26.4,
+            26.5,
+            27.2
+          ],
+          "server_ms": [
+            19.1,
+            19.6,
+            19.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 16.36,
+              "dense": 2.79
+            },
+            {
+              "embed": 16.65,
+              "dense": 2.98
+            },
+            {
+              "embed": 16.6,
+              "dense": 3.07
+            }
+          ]
+        },
+        {
+          "id": "d05",
+          "type": "numeric",
+          "query": "How soon must a lost ID badge be reported?",
+          "relevant": [
+            "ACP-5.2"
+          ],
+          "retrieved": [
+            "ACP-5.2",
+            "IRS-2.3",
+            "ACP-2.1",
+            "ACP-2.2",
+            "IRS-4.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            26.9,
+            25.0,
+            24.6
+          ],
+          "server_ms": [
+            20.0,
+            18.0,
+            17.3
+          ],
+          "steps_ms": [
+            {
+              "embed": 17.05,
+              "dense": 2.95
+            },
+            {
+              "embed": 15.18,
+              "dense": 2.83
+            },
+            {
+              "embed": 14.36,
+              "dense": 2.97
+            }
+          ]
+        },
+        {
+          "id": "d06",
+          "type": "negation",
+          "query": "Can visitors go into the control room?",
+          "relevant": [
+            "ACP-3.2"
+          ],
+          "retrieved": [
+            "ACP-3.2",
+            "ACP-3.1",
+            "ACP-5.1",
+            "ACP-4.1",
+            "ACP-3.3"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            23.0,
+            24.9,
+            24.2
+          ],
+          "server_ms": [
+            17.5,
+            18.4,
+            18.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.73,
+              "dense": 2.75
+            },
+            {
+              "embed": 14.85,
+              "dense": 3.53
+            },
+            {
+              "embed": 15.28,
+              "dense": 2.78
+            }
+          ]
+        },
+        {
+          "id": "d07",
+          "type": "semantic",
+          "query": "Is it okay to let a colleague use my access card?",
+          "relevant": [
+            "ACP-2.2"
+          ],
+          "retrieved": [
+            "ACP-2.2",
+            "ACP-3.1",
+            "ACP-2.1",
+            "ACP-3.2",
+            "ACP-4.3"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            38.5,
+            26.6,
+            23.8
+          ],
+          "server_ms": [
+            32.2,
+            19.7,
+            17.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 26.43,
+              "dense": 5.75
+            },
+            {
+              "embed": 16.4,
+              "dense": 3.3
+            },
+            {
+              "embed": 14.33,
+              "dense": 2.72
+            }
+          ]
+        },
+        {
+          "id": "d08",
+          "type": "exact_id",
+          "query": "What is required under IRS-3.2?",
+          "relevant": [
+            "IRS-3.2"
+          ],
+          "retrieved": [
+            "IRS-3.2",
+            "TEP-4.2.3",
+            "IRS-3.1",
+            "TEP-4.2.2",
+            "IRS-2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            23.7,
+            23.1,
+            25.2
+          ],
+          "server_ms": [
+            17.5,
+            16.0,
+            19.2
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.91,
+              "dense": 2.63
+            },
+            {
+              "embed": 13.24,
+              "dense": 2.78
+            },
+            {
+              "embed": 16.02,
+              "dense": 3.17
+            }
+          ]
+        }
+      ]
+    },
+    "hybrid": {
+      "summary": {
+        "P@1": 0.875,
+        "P@3": 0.3333,
+        "P@5": 0.2,
+        "R@1": 0.875,
+        "R@3": 1.0,
+        "R@5": 1.0,
+        "MRR": 0.9167,
+        "NDCG@5": 0.9375,
+        "p50_ms": 25.9,
+        "p95_ms": 32.5,
+        "server_p50_ms": 19.2,
+        "server_p95_ms": 25.2,
+        "mean_step_ms": {
+          "bm25": 0.3,
+          "dense": 3.3,
+          "embed": 16.4,
+          "rrf": 0.0
+        }
+      },
+      "by_type": {
+        "exact_id": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 27.3,
+          "p95_ms": 32.2,
+          "server_p50_ms": 20.8,
+          "server_p95_ms": 24.9,
+          "mean_step_ms": {
+            "bm25": 0.2,
+            "dense": 3.3,
+            "embed": 17.9,
+            "rrf": 0.0
+          }
+        },
+        "negation": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 25.9,
+          "p95_ms": 26.4,
+          "server_p50_ms": 18.5,
+          "server_p95_ms": 20.2,
+          "mean_step_ms": {
+            "bm25": 0.2,
+            "dense": 3.3,
+            "embed": 15.1,
+            "rrf": 0.0
+          }
+        },
+        "numeric": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 25.6,
+          "p95_ms": 27.3,
+          "server_p50_ms": 18.6,
+          "server_p95_ms": 20.8,
+          "mean_step_ms": {
+            "bm25": 0.2,
+            "dense": 3.3,
+            "embed": 15.2,
+            "rrf": 0.0
+          }
+        },
+        "semantic": {
+          "P@1": 0.5,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 0.5,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 0.6667,
+          "NDCG@5": 0.75,
+          "p50_ms": 25.9,
+          "p95_ms": 33.1,
+          "server_p50_ms": 19.4,
+          "server_p95_ms": 26.0,
+          "mean_step_ms": {
+            "bm25": 0.4,
+            "dense": 3.2,
+            "embed": 17.2,
+            "rrf": 0.0
+          }
+        }
+      },
+      "queries": [
+        {
+          "id": "d01",
+          "type": "exact_id",
+          "query": "What does clause TEP-4.2.2 say?",
+          "relevant": [
+            "TEP-4.2.2"
+          ],
+          "retrieved": [
+            "TEP-4.2.2",
+            "TEP-5.1",
+            "TEP-5.2",
+            "TEP-4.2.1",
+            "TEP-4.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            27.5,
+            33.0,
+            29.9
+          ],
+          "server_ms": [
+            21.8,
+            25.7,
+            22.6
+          ],
+          "steps_ms": [
+            {
+              "embed": 18.38,
+              "dense": 3.25,
+              "bm25": 0.19,
+              "rrf": 0.01
+            },
+            {
+              "embed": 21.69,
+              "dense": 3.83,
+              "bm25": 0.21,
+              "rrf": 0.01
+            },
+            {
+              "embed": 18.67,
+              "dense": 3.63,
+              "bm25": 0.28,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "d02",
+          "type": "negation",
+          "query": "Where is hot work prohibited?",
+          "relevant": [
+            "HWP-3.2"
+          ],
+          "retrieved": [
+            "HWP-3.2",
+            "HWP-3.1",
+            "HWP-3.3",
+            "HWP-2.1",
+            "HWP-5.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            26.1,
+            24.4,
+            26.5
+          ],
+          "server_ms": [
+            19.6,
+            17.6,
+            20.4
+          ],
+          "steps_ms": [
+            {
+              "embed": 16.14,
+              "dense": 3.21,
+              "bm25": 0.18,
+              "rrf": 0.02
+            },
+            {
+              "embed": 13.85,
+              "dense": 3.5,
+              "bm25": 0.21,
+              "rrf": 0.02
+            },
+            {
+              "embed": 16.7,
+              "dense": 3.47,
+              "bm25": 0.24,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "d03",
+          "type": "numeric",
+          "query": "Who must approve an expense of INR 20,000?",
+          "relevant": [
+            "TEP-4.2.2"
+          ],
+          "retrieved": [
+            "TEP-4.2.2",
+            "TEP-4.2.3",
+            "PRCA-1.2",
+            "TEP-2.1",
+            "TEP-4.2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            27.6,
+            25.9,
+            26.5
+          ],
+          "server_ms": [
+            21.3,
+            19.4,
+            18.8
+          ],
+          "steps_ms": [
+            {
+              "embed": 17.83,
+              "dense": 3.18,
+              "bm25": 0.3,
+              "rrf": 0.02
+            },
+            {
+              "embed": 15.76,
+              "dense": 3.37,
+              "bm25": 0.21,
+              "rrf": 0.02
+            },
+            {
+              "embed": 15.34,
+              "dense": 3.19,
+              "bm25": 0.21,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "d04",
+          "type": "semantic",
+          "query": "How long does someone have to keep watching for fire after welding is done?",
+          "relevant": [
+            "HWP-4.1"
+          ],
+          "retrieved": [
+            "HWP-4.1",
+            "HWP-2.2",
+            "HWP-2.1",
+            "HWP-1.1",
+            "HWP-5.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            26.0,
+            25.2,
+            29.1
+          ],
+          "server_ms": [
+            19.1,
+            19.7,
+            22.4
+          ],
+          "steps_ms": [
+            {
+              "embed": 15.73,
+              "dense": 3.13,
+              "bm25": 0.26,
+              "rrf": 0.01
+            },
+            {
+              "embed": 16.72,
+              "dense": 2.64,
+              "bm25": 0.28,
+              "rrf": 0.02
+            },
+            {
+              "embed": 18.24,
+              "dense": 3.74,
+              "bm25": 0.39,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "d05",
+          "type": "numeric",
+          "query": "How soon must a lost ID badge be reported?",
+          "relevant": [
+            "ACP-5.2"
+          ],
+          "retrieved": [
+            "ACP-5.2",
+            "IRS-2.3",
+            "ACP-2.1",
+            "ACP-2.2",
+            "IRS-2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            24.3,
+            25.4,
+            23.6
+          ],
+          "server_ms": [
+            18.0,
+            18.4,
+            16.5
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.39,
+              "dense": 3.28,
+              "bm25": 0.26,
+              "rrf": 0.02
+            },
+            {
+              "embed": 14.6,
+              "dense": 3.54,
+              "bm25": 0.27,
+              "rrf": 0.02
+            },
+            {
+              "embed": 13.15,
+              "dense": 3.11,
+              "bm25": 0.22,
+              "rrf": 0.01
+            }
+          ]
+        },
+        {
+          "id": "d06",
+          "type": "negation",
+          "query": "Can visitors go into the control room?",
+          "relevant": [
+            "ACP-3.2"
+          ],
+          "retrieved": [
+            "ACP-3.2",
+            "ACP-3.1",
+            "ACP-4.1",
+            "ACP-3.3",
+            "ACP-2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            24.0,
+            25.9,
+            25.9
+          ],
+          "server_ms": [
+            17.5,
+            18.7,
+            18.4
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.23,
+              "dense": 3.06,
+              "bm25": 0.22,
+              "rrf": 0.02
+            },
+            {
+              "embed": 15.1,
+              "dense": 3.36,
+              "bm25": 0.2,
+              "rrf": 0.01
+            },
+            {
+              "embed": 14.83,
+              "dense": 3.33,
+              "bm25": 0.24,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "d07",
+          "type": "semantic",
+          "query": "Is it okay to let a colleague use my access card?",
+          "relevant": [
+            "ACP-2.2"
+          ],
+          "retrieved": [
+            "ACP-4.1",
+            "ACP-2.1",
+            "ACP-2.2",
+            "TEP-6.1",
+            "ACP-5.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.3333333333333333,
+          "NDCG@5": 0.5,
+          "latency_ms": [
+            34.4,
+            25.8,
+            24.5
+          ],
+          "server_ms": [
+            27.2,
+            18.9,
+            17.5
+          ],
+          "steps_ms": [
+            {
+              "embed": 22.56,
+              "dense": 3.49,
+              "bm25": 1.06,
+              "rrf": 0.07
+            },
+            {
+              "embed": 15.27,
+              "dense": 3.32,
+              "bm25": 0.26,
+              "rrf": 0.02
+            },
+            {
+              "embed": 14.48,
+              "dense": 2.75,
+              "bm25": 0.25,
+              "rrf": 0.01
+            }
+          ]
+        },
+        {
+          "id": "d08",
+          "type": "exact_id",
+          "query": "What is required under IRS-3.2?",
+          "relevant": [
+            "IRS-3.2"
+          ],
+          "retrieved": [
+            "IRS-3.2",
+            "TEP-4.1",
+            "TEP-6.2",
+            "TEP-5.1",
+            "TEP-4.2.3"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            27.1,
+            25.9,
+            26.1
+          ],
+          "server_ms": [
+            19.8,
+            19.4,
+            19.0
+          ],
+          "steps_ms": [
+            {
+              "embed": 16.26,
+              "dense": 3.39,
+              "bm25": 0.15,
+              "rrf": 0.02
+            },
+            {
+              "embed": 16.63,
+              "dense": 2.64,
+              "bm25": 0.15,
+              "rrf": 0.01
+            },
+            {
+              "embed": 15.95,
+              "dense": 2.83,
+              "bm25": 0.17,
+              "rrf": 0.01
+            }
+          ]
+        }
+      ]
+    },
+    "hybrid_rerank": {
+      "summary": {
+        "P@1": 0.625,
+        "P@3": 0.3333,
+        "P@5": 0.2,
+        "R@1": 0.625,
+        "R@3": 1.0,
+        "R@5": 1.0,
+        "MRR": 0.8125,
+        "NDCG@5": 0.8616,
+        "p50_ms": 1007.9,
+        "p95_ms": 1141.9,
+        "server_p50_ms": 1000.9,
+        "server_p95_ms": 1135.0,
+        "mean_step_ms": {
+          "bm25": 0.2,
+          "dense": 3.2,
+          "embed": 15.5,
+          "rerank": 1005.0,
+          "rrf": 0.0
+        }
+      },
+      "by_type": {
+        "exact_id": {
+          "P@1": 0.5,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 0.5,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 0.75,
+          "NDCG@5": 0.8155,
+          "p50_ms": 962.9,
+          "p95_ms": 1099.8,
+          "server_p50_ms": 956.1,
+          "server_p95_ms": 1092.8,
+          "mean_step_ms": {
+            "bm25": 0.2,
+            "dense": 3.8,
+            "embed": 15.8,
+            "rerank": 956.8,
+            "rrf": 0.0
+          }
+        },
+        "negation": {
+          "P@1": 0.5,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 0.5,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 0.75,
+          "NDCG@5": 0.8155,
+          "p50_ms": 986.8,
+          "p95_ms": 1068.7,
+          "server_p50_ms": 979.9,
+          "server_p95_ms": 1061.0,
+          "mean_step_ms": {
+            "bm25": 0.2,
+            "dense": 3.1,
+            "embed": 15.5,
+            "rerank": 974.9,
+            "rrf": 0.0
+          }
+        },
+        "numeric": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 1035.0,
+          "p95_ms": 1112.5,
+          "server_p50_ms": 1027.9,
+          "server_p95_ms": 1105.5,
+          "mean_step_ms": {
+            "bm25": 0.2,
+            "dense": 3.1,
+            "embed": 15.0,
+            "rerank": 1016.9,
+            "rrf": 0.0
+          }
+        },
+        "semantic": {
+          "P@1": 0.5,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 0.5,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 0.75,
+          "NDCG@5": 0.8155,
+          "p50_ms": 1073.5,
+          "p95_ms": 1229.3,
+          "server_p50_ms": 1066.5,
+          "server_p95_ms": 1222.5,
+          "mean_step_ms": {
+            "bm25": 0.3,
+            "dense": 3.0,
+            "embed": 15.7,
+            "rerank": 1071.3,
+            "rrf": 0.0
+          }
+        }
+      },
+      "queries": [
+        {
+          "id": "d01",
+          "type": "exact_id",
+          "query": "What does clause TEP-4.2.2 say?",
+          "relevant": [
+            "TEP-4.2.2"
+          ],
+          "retrieved": [
+            "TEP-4.2.2",
+            "TEP-4.2.3",
+            "TEP-2.2",
+            "TEP-4.2.1",
+            "TEP-3.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            964.2,
+            966.0,
+            1144.4
+          ],
+          "server_ms": [
+            958.4,
+            958.6,
+            1137.6
+          ],
+          "steps_ms": [
+            {
+              "embed": 17.25,
+              "dense": 5.61,
+              "bm25": 0.26,
+              "rrf": 0.02,
+              "rerank": 935.29
+            },
+            {
+              "embed": 17.47,
+              "dense": 4.22,
+              "bm25": 0.29,
+              "rrf": 0.02,
+              "rerank": 936.59
+            },
+            {
+              "embed": 16.58,
+              "dense": 3.67,
+              "bm25": 0.22,
+              "rrf": 0.01,
+              "rerank": 1117.14
+            }
+          ]
+        },
+        {
+          "id": "d02",
+          "type": "negation",
+          "query": "Where is hot work prohibited?",
+          "relevant": [
+            "HWP-3.2"
+          ],
+          "retrieved": [
+            "HWP-3.1",
+            "HWP-3.2",
+            "HWP-3.3",
+            "HWP-4.1",
+            "HWP-2.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            996.6,
+            971.2,
+            1092.7
+          ],
+          "server_ms": [
+            989.5,
+            964.2,
+            1084.8
+          ],
+          "steps_ms": [
+            {
+              "embed": 18.46,
+              "dense": 3.49,
+              "bm25": 0.22,
+              "rrf": 0.02,
+              "rerank": 967.3
+            },
+            {
+              "embed": 13.91,
+              "dense": 3.36,
+              "bm25": 0.17,
+              "rrf": 0.02,
+              "rerank": 946.77
+            },
+            {
+              "embed": 14.84,
+              "dense": 3.06,
+              "bm25": 0.16,
+              "rrf": 0.01,
+              "rerank": 1066.75
+            }
+          ]
+        },
+        {
+          "id": "d03",
+          "type": "numeric",
+          "query": "Who must approve an expense of INR 20,000?",
+          "relevant": [
+            "TEP-4.2.2"
+          ],
+          "retrieved": [
+            "TEP-4.2.2",
+            "TEP-4.2.3",
+            "TEP-4.2.1",
+            "PRCA-1.2",
+            "TEP-1.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            1034.3,
+            1001.2,
+            1127.6
+          ],
+          "server_ms": [
+            1026.8,
+            994.0,
+            1120.4
+          ],
+          "steps_ms": [
+            {
+              "embed": 15.76,
+              "dense": 3.34,
+              "bm25": 0.25,
+              "rrf": 0.02,
+              "rerank": 1007.45
+            },
+            {
+              "embed": 14.49,
+              "dense": 2.82,
+              "bm25": 0.19,
+              "rrf": 0.01,
+              "rerank": 976.48
+            },
+            {
+              "embed": 16.27,
+              "dense": 2.95,
+              "bm25": 0.23,
+              "rrf": 0.02,
+              "rerank": 1100.92
+            }
+          ]
+        },
+        {
+          "id": "d04",
+          "type": "semantic",
+          "query": "How long does someone have to keep watching for fire after welding is done?",
+          "relevant": [
+            "HWP-4.1"
+          ],
+          "retrieved": [
+            "HWP-4.1",
+            "HWP-2.2",
+            "HWP-1.1",
+            "HWP-2.1",
+            "HWP-3.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            1092.9,
+            1116.1,
+            1267.0
+          ],
+          "server_ms": [
+            1086.2,
+            1109.2,
+            1260.2
+          ],
+          "steps_ms": [
+            {
+              "embed": 15.34,
+              "dense": 3.17,
+              "bm25": 0.3,
+              "rrf": 0.02,
+              "rerank": 1067.35
+            },
+            {
+              "embed": 16.22,
+              "dense": 2.98,
+              "bm25": 0.28,
+              "rrf": 0.02,
+              "rerank": 1089.66
+            },
+            {
+              "embed": 18.29,
+              "dense": 2.85,
+              "bm25": 0.27,
+              "rrf": 0.02,
+              "rerank": 1238.77
+            }
+          ]
+        },
+        {
+          "id": "d05",
+          "type": "numeric",
+          "query": "How soon must a lost ID badge be reported?",
+          "relevant": [
+            "ACP-5.2"
+          ],
+          "retrieved": [
+            "ACP-5.2",
+            "IRS-4.1",
+            "IRS-2.2",
+            "IRS-2.3",
+            "IRS-3.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            988.3,
+            1035.8,
+            1067.3
+          ],
+          "server_ms": [
+            980.6,
+            1029.0,
+            1060.9
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.53,
+              "dense": 3.32,
+              "bm25": 0.23,
+              "rrf": 0.02,
+              "rerank": 962.53
+            },
+            {
+              "embed": 14.7,
+              "dense": 3.25,
+              "bm25": 0.27,
+              "rrf": 0.02,
+              "rerank": 1010.81
+            },
+            {
+              "embed": 14.48,
+              "dense": 3.22,
+              "bm25": 0.22,
+              "rrf": 0.01,
+              "rerank": 1042.94
+            }
+          ]
+        },
+        {
+          "id": "d06",
+          "type": "negation",
+          "query": "Can visitors go into the control room?",
+          "relevant": [
+            "ACP-3.2"
+          ],
+          "retrieved": [
+            "ACP-3.2",
+            "ACP-3.1",
+            "ACP-5.1",
+            "ACP-4.1",
+            "ACP-1.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            984.2,
+            989.4,
+            970.3
+          ],
+          "server_ms": [
+            977.2,
+            982.5,
+            964.3
+          ],
+          "steps_ms": [
+            {
+              "embed": 15.76,
+              "dense": 3.09,
+              "bm25": 0.19,
+              "rrf": 0.01,
+              "rerank": 958.13
+            },
+            {
+              "embed": 16.11,
+              "dense": 2.97,
+              "bm25": 0.21,
+              "rrf": 0.02,
+              "rerank": 963.24
+            },
+            {
+              "embed": 14.21,
+              "dense": 2.59,
+              "bm25": 0.18,
+              "rrf": 0.01,
+              "rerank": 947.3
+            }
+          ]
+        },
+        {
+          "id": "d07",
+          "type": "semantic",
+          "query": "Is it okay to let a colleague use my access card?",
+          "relevant": [
+            "ACP-2.2"
+          ],
+          "retrieved": [
+            "ACP-5.1",
+            "ACP-2.2",
+            "ACP-2.1",
+            "TEP-6.1",
+            "ACP-5.2"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            1054.0,
+            1039.1,
+            1014.5
+          ],
+          "server_ms": [
+            1046.8,
+            1032.0,
+            1007.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 15.79,
+              "dense": 3.6,
+              "bm25": 0.23,
+              "rrf": 0.01,
+              "rerank": 1027.19
+            },
+            {
+              "embed": 14.37,
+              "dense": 2.81,
+              "bm25": 0.25,
+              "rrf": 0.01,
+              "rerank": 1014.56
+            },
+            {
+              "embed": 14.44,
+              "dense": 2.59,
+              "bm25": 0.24,
+              "rrf": 0.02,
+              "rerank": 990.45
+            }
+          ]
+        },
+        {
+          "id": "d08",
+          "type": "exact_id",
+          "query": "What is required under IRS-3.2?",
+          "relevant": [
+            "IRS-3.2"
+          ],
+          "retrieved": [
+            "PRC-3.2",
+            "IRS-3.2",
+            "IRS-2.2",
+            "TEP-3.2",
+            "IRS-3.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            961.5,
+            922.0,
+            942.4
+          ],
+          "server_ms": [
+            953.9,
+            915.2,
+            935.9
+          ],
+          "steps_ms": [
+            {
+              "embed": 13.52,
+              "dense": 2.98,
+              "bm25": 0.21,
+              "rrf": 0.02,
+              "rerank": 937.12
+            },
+            {
+              "embed": 13.64,
+              "dense": 2.72,
+              "bm25": 0.16,
+              "rrf": 0.02,
+              "rerank": 898.67
+            },
+            {
+              "embed": 16.56,
+              "dense": 3.34,
+              "bm25": 0.17,
+              "rrf": 0.02,
+              "rerank": 915.82
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

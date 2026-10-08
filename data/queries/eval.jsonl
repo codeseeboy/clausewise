@@ -1,0 +1,12 @@
+{"id": "e01", "type": "exact_id", "query": "Summarise clause ACP-4.2.", "relevant": ["ACP-4.2"]}
+{"id": "e02", "type": "exact_id", "query": "What does HWP-4.3 require?", "relevant": ["HWP-4.3"]}
+{"id": "e03", "type": "exact_id", "query": "Explain PRC-4.1.", "relevant": ["PRC-4.1"]}
+{"id": "e04", "type": "negation", "query": "Which expenses are never reimbursed?", "relevant": ["TEP-5.1", "TEP-2.2"]}
+{"id": "e05", "type": "negation", "query": "When is a hot work permit not needed?", "relevant": ["HWP-2.2"]}
+{"id": "e06", "type": "negation", "query": "Can contractors walk around the tank farm without an escort?", "relevant": ["ACP-3.3"]}
+{"id": "e07", "type": "numeric", "query": "What is the highest flammable gas reading at which hot work may still start?", "relevant": ["HWP-4.2"]}
+{"id": "e08", "type": "numeric", "query": "How quickly must a 500 litre diesel spill be reported to the regulator?", "relevant": ["IRS-4.2"]}
+{"id": "e09", "type": "numeric", "query": "Who approves an expense claim of INR 75,000?", "relevant": ["TEP-4.2.3"]}
+{"id": "e10", "type": "semantic", "query": "How often are people's access permissions checked?", "relevant": ["ACP-4.2"]}
+{"id": "e11", "type": "semantic", "query": "Will I get into trouble for reporting an accident I saw?", "relevant": ["IRS-5.1"]}
+{"id": "e12", "type": "semantic", "query": "How many quotes do I need for a large purchase?", "relevant": ["PRC-3.1", "PRCA-1.1"]}

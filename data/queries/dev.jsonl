@@ -1,0 +1,8 @@
+{"id": "d01", "type": "exact_id", "query": "What does clause TEP-4.2.2 say?", "relevant": ["TEP-4.2.2"]}
+{"id": "d02", "type": "negation", "query": "Where is hot work prohibited?", "relevant": ["HWP-3.2"]}
+{"id": "d03", "type": "numeric", "query": "Who must approve an expense of INR 20,000?", "relevant": ["TEP-4.2.2"]}
+{"id": "d04", "type": "semantic", "query": "How long does someone have to keep watching for fire after welding is done?", "relevant": ["HWP-4.1"]}
+{"id": "d05", "type": "numeric", "query": "How soon must a lost ID badge be reported?", "relevant": ["ACP-5.2"]}
+{"id": "d06", "type": "negation", "query": "Can visitors go into the control room?", "relevant": ["ACP-3.2"]}
+{"id": "d07", "type": "semantic", "query": "Is it okay to let a colleague use my access card?", "relevant": ["ACP-2.2"]}
+{"id": "d08", "type": "exact_id", "query": "What is required under IRS-3.2?", "relevant": ["IRS-3.2"]}

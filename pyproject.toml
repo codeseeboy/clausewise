@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+pythonpath = ["backend", "."]
+testpaths = ["tests"]
+markers = ["integration: needs the running stack (Qdrant, backend, Ollama)"]
+
+# Lets editors and type checkers find the backend package.
+[tool.pyright]
+extraPaths = ["backend"]
+
+[tool.pyrefly]
+search-path = ["backend", "."]

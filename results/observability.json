@@ -1,0 +1,72 @@
+{
+  "ask:hybrid": {
+    "requests": 6,
+    "errors": 0,
+    "error_rate": 0.0,
+    "mean_step_ms": {
+      "bm25": 1.4,
+      "dense": 4.9,
+      "embed": 53.5,
+      "guardrails": 0.1,
+      "llm": 1808.2,
+      "rrf": 0.0
+    }
+  },
+  "ask:hybrid_rerank": {
+    "requests": 6,
+    "errors": 0,
+    "error_rate": 0.0,
+    "mean_step_ms": {
+      "bm25": 0.4,
+      "dense": 5.9,
+      "embed": 30.8,
+      "guardrails": 0.1,
+      "llm": 1976.2,
+      "rerank": 1344.7,
+      "rrf": 0.0
+    }
+  },
+  "ask:vector": {
+    "requests": 7,
+    "errors": 0,
+    "error_rate": 0.0,
+    "mean_step_ms": {
+      "dense": 14.0,
+      "embed": 107.2,
+      "guardrails": 1.1,
+      "llm": 16099.9
+    }
+  },
+  "search:hybrid": {
+    "requests": 66,
+    "errors": 0,
+    "error_rate": 0.0,
+    "mean_step_ms": {
+      "bm25": 0.3,
+      "dense": 3.2,
+      "embed": 32.8,
+      "rrf": 0.0
+    }
+  },
+  "search:hybrid_rerank": {
+    "requests": 66,
+    "errors": 0,
+    "error_rate": 0.0,
+    "mean_step_ms": {
+      "bm25": 0.2,
+      "dense": 3.2,
+      "embed": 34.0,
+      "rerank": 965.7,
+      "rrf": 0.0
+    }
+  },
+  "search:vector": {
+    "requests": 66,
+    "errors": 0,
+    "error_rate": 0.0,
+    "mean_step_ms": {
+      "dense": 3.3,
+      "embed": 30.8
+    }
+  }
+}

@@ -1,0 +1,96 @@
+
+services:
+  vectordb:
+    image: qdrant/qdrant:v1.19.2
+    ports: ["6333:6333"]
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/6333' || exit 1"]
+      interval: 5s
+      retries: 30
+
+  ollama:
+    image: ollama/ollama:0.35.1
+    ports: ["11434:11434"]
+    volumes:
+      - ollama_models:/root/.ollama
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - ollama serve & until ollama list >/dev/null 2>&1; do sleep 1; done;
+        ollama pull ${LLM_MODEL:-qwen2.5:7b} && touch /tmp/ready && wait
+    healthcheck:
+      test: ["CMD", "test", "-f", "/tmp/ready"]
+      interval: 10s
+      retries: 360
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      target: app
+    ports: ["8000:8000"]
+    environment:
+      QDRANT_URL: http://vectordb:6333
+      OLLAMA_URL: http://ollama:11434
+      LLM_PROVIDER: ${LLM_PROVIDER:-ollama}
+      LLM_MODEL: ${LLM_MODEL:-qwen2.5:7b}
+    volumes:
+      - ./data:/srv/data:ro
+      - ./results:/srv/results
+      - hf_cache:/models
+    depends_on:
+      vectordb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      retries: 90
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports: ["8501:8501"]
+    environment:
+      BACKEND_URL: http://backend:8000
+      RESULTS_DIR: /srv/results
+    volumes:
+      - ./results:/srv/results:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  # Worker: runs the benchmark and the robustness check once, writes results/, then exits.
+  evaluation:
+    build:
+      context: .
+      dockerfile: evaluation/Dockerfile
+    environment:
+      BACKEND_URL: http://backend:8000
+    volumes:
+      - ./data:/srv/data:ro
+      - ./results:/srv/results
+    depends_on:
+      backend:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+
+  # Runs after the evaluation so test traffic does not distort the latency numbers.
+  tests:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+      target: test
+    environment:
+      BACKEND_URL: http://backend:8000
+    volumes:
+      - ./results:/srv/results
+    depends_on:
+      evaluation:
+        condition: service_completed_successfully
+
+volumes:
+  ollama_models:
+    name: envint_ollama_models
+  hf_cache:
+    name: envint_hf_cache

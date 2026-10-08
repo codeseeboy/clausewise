@@ -1,0 +1,2210 @@
+{
+  "index": {
+    "files": 6,
+    "chunks": 52,
+    "failed": {},
+    "embed_seconds": 1.073708111999963,
+    "total_seconds": 1.21066676800001,
+    "bm25_build_seconds": 0.01044307800009392,
+    "embedder_parameters": 33360000,
+    "reranker_parameters": 278044417,
+    "backend_memory_mb": 976
+  },
+  "pareto_front": [
+    "vector",
+    "hybrid_rerank"
+  ],
+  "results": {
+    "vector": {
+      "summary": {
+        "P@1": 0.75,
+        "P@3": 0.3611,
+        "P@5": 0.2333,
+        "R@1": 0.6667,
+        "R@3": 0.9167,
+        "R@5": 1.0,
+        "MRR": 0.8542,
+        "NDCG@5": 0.8777,
+        "p50_ms": 54.9,
+        "p95_ms": 69.7,
+        "server_p50_ms": 48.0,
+        "server_p95_ms": 62.2,
+        "mean_step_ms": {
+          "dense": 3.1,
+          "embed": 42.1
+        }
+      },
+      "by_type": {
+        "exact_id": {
+          "P@1": 0.3333,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 0.3333,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 0.6667,
+          "NDCG@5": 0.754,
+          "p50_ms": 52.7,
+          "p95_ms": 65.3,
+          "server_p50_ms": 45.3,
+          "server_p95_ms": 57.8,
+          "mean_step_ms": {
+            "dense": 2.9,
+            "embed": 36.0
+          }
+        },
+        "negation": {
+          "P@1": 1.0,
+          "P@3": 0.4444,
+          "P@5": 0.2667,
+          "R@1": 0.8333,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 0.9732,
+          "p50_ms": 48.7,
+          "p95_ms": 58.6,
+          "server_p50_ms": 41.1,
+          "server_p95_ms": 51.2,
+          "mean_step_ms": {
+            "dense": 2.8,
+            "embed": 33.0
+          }
+        },
+        "numeric": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 59.9,
+          "p95_ms": 69.3,
+          "server_p50_ms": 52.1,
+          "server_p95_ms": 61.4,
+          "mean_step_ms": {
+            "dense": 3.0,
+            "embed": 48.9
+          }
+        },
+        "semantic": {
+          "P@1": 0.6667,
+          "P@3": 0.3333,
+          "P@5": 0.2667,
+          "R@1": 0.5,
+          "R@3": 0.6667,
+          "R@5": 1.0,
+          "MRR": 0.75,
+          "NDCG@5": 0.7835,
+          "p50_ms": 61.9,
+          "p95_ms": 79.9,
+          "server_p50_ms": 53.9,
+          "server_p95_ms": 66.8,
+          "mean_step_ms": {
+            "dense": 3.6,
+            "embed": 50.5
+          }
+        }
+      },
+      "queries": [
+        {
+          "id": "e01",
+          "type": "exact_id",
+          "query": "Summarise clause ACP-4.2.",
+          "relevant": [
+            "ACP-4.2"
+          ],
+          "retrieved": [
+            "PRC-4.1",
+            "ACP-4.2",
+            "PRC-3.2",
+            "PRCA-1.1",
+            "PRC-3.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            24.6,
+            68.9,
+            55.9
+          ],
+          "server_ms": [
+            17.7,
+            61.5,
+            48.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.98,
+              "dense": 2.7
+            },
+            {
+              "embed": 58.09,
+              "dense": 3.45
+            },
+            {
+              "embed": 46.26,
+              "dense": 2.4
+            }
+          ]
+        },
+        {
+          "id": "e02",
+          "type": "exact_id",
+          "query": "What does HWP-4.3 require?",
+          "relevant": [
+            "HWP-4.3"
+          ],
+          "retrieved": [
+            "HWP-4.3",
+            "HWP-2.1",
+            "HWP-4.2",
+            "HWP-1.1",
+            "HWP-1.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            24.7,
+            59.8,
+            54.2
+          ],
+          "server_ms": [
+            18.4,
+            52.3,
+            46.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.87,
+              "dense": 3.58
+            },
+            {
+              "embed": 49.1,
+              "dense": 3.22
+            },
+            {
+              "embed": 43.0,
+              "dense": 3.06
+            }
+          ]
+        },
+        {
+          "id": "e03",
+          "type": "exact_id",
+          "query": "Explain PRC-4.1.",
+          "relevant": [
+            "PRC-4.1"
+          ],
+          "retrieved": [
+            "PRC-1.1",
+            "PRC-4.1",
+            "PRC-3.1",
+            "PRCA-1.1",
+            "PRC-2.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            25.9,
+            46.9,
+            52.7
+          ],
+          "server_ms": [
+            19.5,
+            40.5,
+            45.3
+          ],
+          "steps_ms": [
+            {
+              "embed": 16.51,
+              "dense": 2.96
+            },
+            {
+              "embed": 38.14,
+              "dense": 2.37
+            },
+            {
+              "embed": 42.96,
+              "dense": 2.36
+            }
+          ]
+        },
+        {
+          "id": "e04",
+          "type": "negation",
+          "query": "Which expenses are never reimbursed?",
+          "relevant": [
+            "TEP-5.1",
+            "TEP-2.2"
+          ],
+          "retrieved": [
+            "TEP-5.1",
+            "TEP-5.2",
+            "TEP-2.2",
+            "TEP-1.1",
+            "TEP-6.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 0.5,
+          "P@3": 0.6666666666666666,
+          "R@3": 1.0,
+          "P@5": 0.4,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 0.9197207891481876,
+          "latency_ms": [
+            23.5,
+            44.1,
+            62.2
+          ],
+          "server_ms": [
+            16.9,
+            37.1,
+            53.8
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.19,
+              "dense": 2.76
+            },
+            {
+              "embed": 34.77,
+              "dense": 2.36
+            },
+            {
+              "embed": 50.94,
+              "dense": 2.88
+            }
+          ]
+        },
+        {
+          "id": "e05",
+          "type": "negation",
+          "query": "When is a hot work permit not needed?",
+          "relevant": [
+            "HWP-2.2"
+          ],
+          "retrieved": [
+            "HWP-2.2",
+            "HWP-2.1",
+            "HWP-5.1",
+            "HWP-3.1",
+            "HWP-3.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            24.7,
+            53.3,
+            48.7
+          ],
+          "server_ms": [
+            17.8,
+            47.2,
+            41.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.48,
+              "dense": 3.3
+            },
+            {
+              "embed": 43.77,
+              "dense": 3.46
+            },
+            {
+              "embed": 38.78,
+              "dense": 2.35
+            }
+          ]
+        },
+        {
+          "id": "e06",
+          "type": "negation",
+          "query": "Can contractors walk around the tank farm without an escort?",
+          "relevant": [
+            "ACP-3.3"
+          ],
+          "retrieved": [
+            "ACP-3.3",
+            "HWP-3.2",
+            "ACP-3.1",
+            "ACP-3.2",
+            "HWP-2.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            29.3,
+            50.6,
+            50.6
+          ],
+          "server_ms": [
+            22.6,
+            42.7,
+            42.9
+          ],
+          "steps_ms": [
+            {
+              "embed": 19.54,
+              "dense": 3.02
+            },
+            {
+              "embed": 40.3,
+              "dense": 2.4
+            },
+            {
+              "embed": 40.31,
+              "dense": 2.54
+            }
+          ]
+        },
+        {
+          "id": "e07",
+          "type": "numeric",
+          "query": "What is the highest flammable gas reading at which hot work may still start?",
+          "relevant": [
+            "HWP-4.2"
+          ],
+          "retrieved": [
+            "HWP-4.2",
+            "HWP-3.1",
+            "HWP-4.1",
+            "HWP-4.3",
+            "HWP-3.3"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            45.4,
+            59.6,
+            71.9
+          ],
+          "server_ms": [
+            37.7,
+            51.4,
+            64.4
+          ],
+          "steps_ms": [
+            {
+              "embed": 32.94,
+              "dense": 4.75
+            },
+            {
+              "embed": 48.94,
+              "dense": 2.45
+            },
+            {
+              "embed": 61.19,
+              "dense": 3.17
+            }
+          ]
+        },
+        {
+          "id": "e08",
+          "type": "numeric",
+          "query": "How quickly must a 500 litre diesel spill be reported to the regulator?",
+          "relevant": [
+            "IRS-4.2"
+          ],
+          "retrieved": [
+            "IRS-4.2",
+            "IRS-4.1",
+            "IRS-2.3",
+            "PRCA-1.2",
+            "HWP-4.3"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            56.6,
+            61.6,
+            65.4
+          ],
+          "server_ms": [
+            50.2,
+            55.1,
+            57.0
+          ],
+          "steps_ms": [
+            {
+              "embed": 47.55,
+              "dense": 2.61
+            },
+            {
+              "embed": 52.61,
+              "dense": 2.48
+            },
+            {
+              "embed": 52.65,
+              "dense": 4.35
+            }
+          ]
+        },
+        {
+          "id": "e09",
+          "type": "numeric",
+          "query": "Who approves an expense claim of INR 75,000?",
+          "relevant": [
+            "TEP-4.2.3"
+          ],
+          "retrieved": [
+            "TEP-4.2.3",
+            "TEP-4.2.2",
+            "TEP-4.2.1",
+            "TEP-4.1",
+            "TEP-2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            62.0,
+            59.9,
+            53.0
+          ],
+          "server_ms": [
+            53.6,
+            52.1,
+            46.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 51.02,
+              "dense": 2.59
+            },
+            {
+              "embed": 49.77,
+              "dense": 2.29
+            },
+            {
+              "embed": 43.5,
+              "dense": 2.57
+            }
+          ]
+        },
+        {
+          "id": "e10",
+          "type": "semantic",
+          "query": "How often are people's access permissions checked?",
+          "relevant": [
+            "ACP-4.2"
+          ],
+          "retrieved": [
+            "ACP-4.2",
+            "ACP-4.3",
+            "ACP-3.1",
+            "ACP-3.2",
+            "ACP-5.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            63.0,
+            61.9,
+            49.7
+          ],
+          "server_ms": [
+            51.4,
+            54.8,
+            42.3
+          ],
+          "steps_ms": [
+            {
+              "embed": 47.85,
+              "dense": 3.56
+            },
+            {
+              "embed": 52.29,
+              "dense": 2.5
+            },
+            {
+              "embed": 39.78,
+              "dense": 2.49
+            }
+          ]
+        },
+        {
+          "id": "e11",
+          "type": "semantic",
+          "query": "Will I get into trouble for reporting an accident I saw?",
+          "relevant": [
+            "IRS-5.1"
+          ],
+          "retrieved": [
+            "IRS-2.1",
+            "IRS-2.3",
+            "IRS-1.1",
+            "IRS-5.1",
+            "IRS-3.2"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.0,
+          "R@3": 0.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.25,
+          "NDCG@5": 0.43067655807339306,
+          "latency_ms": [
+            55.6,
+            63.5,
+            66.8
+          ],
+          "server_ms": [
+            49.2,
+            56.9,
+            60.0
+          ],
+          "steps_ms": [
+            {
+              "embed": 46.76,
+              "dense": 2.41
+            },
+            {
+              "embed": 53.98,
+              "dense": 2.91
+            },
+            {
+              "embed": 57.14,
+              "dense": 2.85
+            }
+          ]
+        },
+        {
+          "id": "e12",
+          "type": "semantic",
+          "query": "How many quotes do I need for a large purchase?",
+          "relevant": [
+            "PRC-3.1",
+            "PRCA-1.1"
+          ],
+          "retrieved": [
+            "PRC-3.1",
+            "PRC-3.2",
+            "PRCA-1.1",
+            "PRCA-1.2",
+            "PRC-4.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 0.5,
+          "P@3": 0.6666666666666666,
+          "R@3": 1.0,
+          "P@5": 0.4,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 0.9197207891481876,
+          "latency_ms": [
+            61.2,
+            88.7,
+            53.6
+          ],
+          "server_ms": [
+            53.9,
+            71.4,
+            46.4
+          ],
+          "steps_ms": [
+            {
+              "embed": 51.19,
+              "dense": 2.76
+            },
+            {
+              "embed": 61.51,
+              "dense": 9.92
+            },
+            {
+              "embed": 43.8,
+              "dense": 2.6
+            }
+          ]
+        }
+      ]
+    },
+    "hybrid": {
+      "summary": {
+        "P@1": 0.6667,
+        "P@3": 0.2778,
+        "P@5": 0.2,
+        "R@1": 0.625,
+        "R@3": 0.7917,
+        "R@5": 0.9167,
+        "MRR": 0.7667,
+        "NDCG@5": 0.7938,
+        "p50_ms": 62.9,
+        "p95_ms": 82.7,
+        "server_p50_ms": 54.5,
+        "server_p95_ms": 71.3,
+        "mean_step_ms": {
+          "bm25": 0.3,
+          "dense": 3.2,
+          "embed": 46.4,
+          "rrf": 0.0
+        }
+      },
+      "by_type": {
+        "exact_id": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 56.1,
+          "p95_ms": 69.2,
+          "server_p50_ms": 49.2,
+          "server_p95_ms": 61.6,
+          "mean_step_ms": {
+            "bm25": 0.1,
+            "dense": 3.0,
+            "embed": 39.4,
+            "rrf": 0.0
+          }
+        },
+        "negation": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2667,
+          "R@1": 0.8333,
+          "R@3": 0.8333,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 0.9591,
+          "p50_ms": 52.8,
+          "p95_ms": 84.7,
+          "server_p50_ms": 45.3,
+          "server_p95_ms": 71.8,
+          "mean_step_ms": {
+            "bm25": 0.4,
+            "dense": 3.3,
+            "embed": 39.5,
+            "rrf": 0.0
+          }
+        },
+        "numeric": {
+          "P@1": 0.6667,
+          "P@3": 0.2222,
+          "P@5": 0.2,
+          "R@1": 0.6667,
+          "R@3": 0.6667,
+          "R@5": 1.0,
+          "MRR": 0.7333,
+          "NDCG@5": 0.7956,
+          "p50_ms": 64.4,
+          "p95_ms": 72.4,
+          "server_p50_ms": 55.7,
+          "server_p95_ms": 63.4,
+          "mean_step_ms": {
+            "bm25": 0.3,
+            "dense": 3.0,
+            "embed": 49.1,
+            "rrf": 0.0
+          }
+        },
+        "semantic": {
+          "P@1": 0.0,
+          "P@3": 0.2222,
+          "P@5": 0.1333,
+          "R@1": 0.0,
+          "R@3": 0.6667,
+          "R@5": 0.6667,
+          "MRR": 0.3333,
+          "NDCG@5": 0.4206,
+          "p50_ms": 67.9,
+          "p95_ms": 81.5,
+          "server_p50_ms": 61.5,
+          "server_p95_ms": 71.4,
+          "mean_step_ms": {
+            "bm25": 0.2,
+            "dense": 3.3,
+            "embed": 57.7,
+            "rrf": 0.0
+          }
+        }
+      },
+      "queries": [
+        {
+          "id": "e01",
+          "type": "exact_id",
+          "query": "Summarise clause ACP-4.2.",
+          "relevant": [
+            "ACP-4.2"
+          ],
+          "retrieved": [
+            "ACP-4.2",
+            "PRC-4.1",
+            "PRC-3.2",
+            "PRCA-1.1",
+            "PRC-3.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            24.2,
+            68.7,
+            56.1
+          ],
+          "server_ms": [
+            17.9,
+            61.8,
+            49.2
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.39,
+              "dense": 3.39,
+              "bm25": 0.12,
+              "rrf": 0.01
+            },
+            {
+              "embed": 58.67,
+              "dense": 2.98,
+              "bm25": 0.13,
+              "rrf": 0.01
+            },
+            {
+              "embed": 46.43,
+              "dense": 2.58,
+              "bm25": 0.14,
+              "rrf": 0.01
+            }
+          ]
+        },
+        {
+          "id": "e02",
+          "type": "exact_id",
+          "query": "What does HWP-4.3 require?",
+          "relevant": [
+            "HWP-4.3"
+          ],
+          "retrieved": [
+            "HWP-4.3",
+            "HWP-2.2",
+            "PRC-3.1",
+            "PRC-3.2",
+            "HWP-2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            26.2,
+            63.0,
+            69.6
+          ],
+          "server_ms": [
+            19.0,
+            54.6,
+            61.2
+          ],
+          "steps_ms": [
+            {
+              "embed": 15.83,
+              "dense": 3.01,
+              "bm25": 0.13,
+              "rrf": 0.01
+            },
+            {
+              "embed": 51.65,
+              "dense": 2.81,
+              "bm25": 0.14,
+              "rrf": 0.01
+            },
+            {
+              "embed": 57.33,
+              "dense": 3.71,
+              "bm25": 0.19,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "e03",
+          "type": "exact_id",
+          "query": "Explain PRC-4.1.",
+          "relevant": [
+            "PRC-4.1"
+          ],
+          "retrieved": [
+            "PRC-4.1",
+            "PRC-1.1",
+            "PRC-3.1",
+            "PRCA-1.1",
+            "PRC-2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            25.7,
+            51.9,
+            64.7
+          ],
+          "server_ms": [
+            19.4,
+            44.5,
+            55.6
+          ],
+          "steps_ms": [
+            {
+              "embed": 16.26,
+              "dense": 2.99,
+              "bm25": 0.12,
+              "rrf": 0.01
+            },
+            {
+              "embed": 41.72,
+              "dense": 2.62,
+              "bm25": 0.11,
+              "rrf": 0.01
+            },
+            {
+              "embed": 52.56,
+              "dense": 2.85,
+              "bm25": 0.15,
+              "rrf": 0.01
+            }
+          ]
+        },
+        {
+          "id": "e04",
+          "type": "negation",
+          "query": "Which expenses are never reimbursed?",
+          "relevant": [
+            "TEP-5.1",
+            "TEP-2.2"
+          ],
+          "retrieved": [
+            "TEP-5.1",
+            "TEP-5.2",
+            "TEP-1.1",
+            "TEP-2.2",
+            "TEP-4.2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 0.5,
+          "P@3": 0.3333333333333333,
+          "R@3": 0.5,
+          "P@5": 0.4,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 0.8772153153380493,
+          "latency_ms": [
+            24.5,
+            48.9,
+            85.2
+          ],
+          "server_ms": [
+            18.0,
+            41.5,
+            75.6
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.94,
+              "dense": 2.88,
+              "bm25": 0.15,
+              "rrf": 0.01
+            },
+            {
+              "embed": 38.51,
+              "dense": 2.78,
+              "bm25": 0.17,
+              "rrf": 0.01
+            },
+            {
+              "embed": 70.37,
+              "dense": 4.78,
+              "bm25": 0.42,
+              "rrf": 0.03
+            }
+          ]
+        },
+        {
+          "id": "e05",
+          "type": "negation",
+          "query": "When is a hot work permit not needed?",
+          "relevant": [
+            "HWP-2.2"
+          ],
+          "retrieved": [
+            "HWP-2.2",
+            "HWP-2.1",
+            "HWP-5.1",
+            "HWP-3.2",
+            "HWP-3.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            23.0,
+            61.9,
+            52.8
+          ],
+          "server_ms": [
+            16.9,
+            54.3,
+            45.3
+          ],
+          "steps_ms": [
+            {
+              "embed": 13.98,
+              "dense": 2.69,
+              "bm25": 0.21,
+              "rrf": 0.01
+            },
+            {
+              "embed": 50.26,
+              "dense": 3.39,
+              "bm25": 0.41,
+              "rrf": 0.22
+            },
+            {
+              "embed": 42.55,
+              "dense": 2.55,
+              "bm25": 0.2,
+              "rrf": 0.01
+            }
+          ]
+        },
+        {
+          "id": "e06",
+          "type": "negation",
+          "query": "Can contractors walk around the tank farm without an escort?",
+          "relevant": [
+            "ACP-3.3"
+          ],
+          "retrieved": [
+            "ACP-3.3",
+            "HWP-3.2",
+            "ACP-3.1",
+            "ACP-3.2",
+            "HWP-1.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            24.5,
+            84.0,
+            60.5
+          ],
+          "server_ms": [
+            18.3,
+            66.2,
+            53.3
+          ],
+          "steps_ms": [
+            {
+              "embed": 15.06,
+              "dense": 2.98,
+              "bm25": 0.27,
+              "rrf": 0.02
+            },
+            {
+              "embed": 59.41,
+              "dense": 5.16,
+              "bm25": 1.59,
+              "rrf": 0.04
+            },
+            {
+              "embed": 50.43,
+              "dense": 2.63,
+              "bm25": 0.24,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "e07",
+          "type": "numeric",
+          "query": "What is the highest flammable gas reading at which hot work may still start?",
+          "relevant": [
+            "HWP-4.2"
+          ],
+          "retrieved": [
+            "HWP-4.2",
+            "HWP-4.3",
+            "HWP-4.1",
+            "HWP-3.1",
+            "HWP-3.3"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            31.4,
+            66.1,
+            64.4
+          ],
+          "server_ms": [
+            23.5,
+            59.1,
+            55.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 19.13,
+              "dense": 3.93,
+              "bm25": 0.4,
+              "rrf": 0.02
+            },
+            {
+              "embed": 56.16,
+              "dense": 2.67,
+              "bm25": 0.27,
+              "rrf": 0.01
+            },
+            {
+              "embed": 52.27,
+              "dense": 3.1,
+              "bm25": 0.31,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "e08",
+          "type": "numeric",
+          "query": "How quickly must a 500 litre diesel spill be reported to the regulator?",
+          "relevant": [
+            "IRS-4.2"
+          ],
+          "retrieved": [
+            "IRS-4.2",
+            "IRS-4.1",
+            "IRS-2.3",
+            "IRS-2.1",
+            "PRCA-1.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            53.5,
+            68.7,
+            59.8
+          ],
+          "server_ms": [
+            47.1,
+            62.4,
+            52.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 44.26,
+              "dense": 2.54,
+              "bm25": 0.29,
+              "rrf": 0.02
+            },
+            {
+              "embed": 59.53,
+              "dense": 2.59,
+              "bm25": 0.26,
+              "rrf": 0.02
+            },
+            {
+              "embed": 49.0,
+              "dense": 2.78,
+              "bm25": 0.28,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "e09",
+          "type": "numeric",
+          "query": "Who approves an expense claim of INR 75,000?",
+          "relevant": [
+            "TEP-4.2.3"
+          ],
+          "retrieved": [
+            "TEP-4.1",
+            "TEP-1.1",
+            "TEP-6.2",
+            "TEP-4.2.2",
+            "TEP-4.2.3"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.0,
+          "R@3": 0.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.2,
+          "NDCG@5": 0.38685280723454163,
+          "latency_ms": [
+            74.9,
+            57.4,
+            64.5
+          ],
+          "server_ms": [
+            64.0,
+            50.5,
+            57.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 59.98,
+              "dense": 3.71,
+              "bm25": 0.28,
+              "rrf": 0.02
+            },
+            {
+              "embed": 47.51,
+              "dense": 2.71,
+              "bm25": 0.23,
+              "rrf": 0.02
+            },
+            {
+              "embed": 53.83,
+              "dense": 3.07,
+              "bm25": 0.21,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "e10",
+          "type": "semantic",
+          "query": "How often are people's access permissions checked?",
+          "relevant": [
+            "ACP-4.2"
+          ],
+          "retrieved": [
+            "ACP-3.2",
+            "ACP-4.2",
+            "ACP-4.3",
+            "ACP-1.1",
+            "ACP-4.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            57.2,
+            79.8,
+            80.4
+          ],
+          "server_ms": [
+            47.9,
+            67.5,
+            71.2
+          ],
+          "steps_ms": [
+            {
+              "embed": 43.9,
+              "dense": 3.78,
+              "bm25": 0.2,
+              "rrf": 0.01
+            },
+            {
+              "embed": 62.78,
+              "dense": 4.52,
+              "bm25": 0.21,
+              "rrf": 0.01
+            },
+            {
+              "embed": 68.18,
+              "dense": 2.68,
+              "bm25": 0.29,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "e11",
+          "type": "semantic",
+          "query": "Will I get into trouble for reporting an accident I saw?",
+          "relevant": [
+            "IRS-5.1"
+          ],
+          "retrieved": [
+            "IRS-2.3",
+            "IRS-5.1",
+            "IRS-2.1",
+            "IRS-4.2",
+            "IRS-3.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            63.0,
+            63.9,
+            67.9
+          ],
+          "server_ms": [
+            54.3,
+            57.2,
+            61.5
+          ],
+          "steps_ms": [
+            {
+              "embed": 51.15,
+              "dense": 2.87,
+              "bm25": 0.27,
+              "rrf": 0.02
+            },
+            {
+              "embed": 54.35,
+              "dense": 2.59,
+              "bm25": 0.23,
+              "rrf": 0.02
+            },
+            {
+              "embed": 58.44,
+              "dense": 2.79,
+              "bm25": 0.23,
+              "rrf": 0.02
+            }
+          ]
+        },
+        {
+          "id": "e12",
+          "type": "semantic",
+          "query": "How many quotes do I need for a large purchase?",
+          "relevant": [
+            "PRC-3.1",
+            "PRCA-1.1"
+          ],
+          "retrieved": [
+            "PRC-4.1",
+            "PRCA-1.2",
+            "PRC-2.1",
+            "PRC-1.1",
+            "HWP-5.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.0,
+          "R@3": 0.0,
+          "P@5": 0.0,
+          "R@5": 0.0,
+          "MRR": 0.0,
+          "NDCG@5": 0.0,
+          "latency_ms": [
+            62.7,
+            82.3,
+            73.1
+          ],
+          "server_ms": [
+            56.0,
+            71.5,
+            64.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 52.83,
+              "dense": 2.92,
+              "bm25": 0.23,
+              "rrf": 0.02
+            },
+            {
+              "embed": 67.32,
+              "dense": 3.9,
+              "bm25": 0.26,
+              "rrf": 0.02
+            },
+            {
+              "embed": 60.22,
+              "dense": 3.61,
+              "bm25": 0.24,
+              "rrf": 0.02
+            }
+          ]
+        }
+      ]
+    },
+    "hybrid_rerank": {
+      "summary": {
+        "P@1": 0.8333,
+        "P@3": 0.3889,
+        "P@5": 0.2333,
+        "R@1": 0.75,
+        "R@3": 1.0,
+        "R@5": 1.0,
+        "MRR": 0.9028,
+        "NDCG@5": 0.9276,
+        "p50_ms": 954.3,
+        "p95_ms": 1113.5,
+        "server_p50_ms": 947.0,
+        "server_p95_ms": 1105.8,
+        "mean_step_ms": {
+          "bm25": 0.2,
+          "dense": 3.2,
+          "embed": 49.3,
+          "rerank": 913.7,
+          "rrf": 0.0
+        }
+      },
+      "by_type": {
+        "exact_id": {
+          "P@1": 1.0,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 1.0,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 941.4,
+          "p95_ms": 958.6,
+          "server_p50_ms": 933.7,
+          "server_p95_ms": 951.8,
+          "mean_step_ms": {
+            "bm25": 0.1,
+            "dense": 3.2,
+            "embed": 40.7,
+            "rerank": 874.6,
+            "rrf": 0.0
+          }
+        },
+        "negation": {
+          "P@1": 1.0,
+          "P@3": 0.4444,
+          "P@5": 0.2667,
+          "R@1": 0.8333,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "p50_ms": 926.5,
+          "p95_ms": 1042.6,
+          "server_p50_ms": 919.0,
+          "server_p95_ms": 1035.7,
+          "mean_step_ms": {
+            "bm25": 0.2,
+            "dense": 2.9,
+            "embed": 38.4,
+            "rerank": 909.3,
+            "rrf": 0.0
+          }
+        },
+        "numeric": {
+          "P@1": 0.6667,
+          "P@3": 0.3333,
+          "P@5": 0.2,
+          "R@1": 0.6667,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 0.7778,
+          "NDCG@5": 0.8333,
+          "p50_ms": 997.7,
+          "p95_ms": 1197.4,
+          "server_p50_ms": 990.3,
+          "server_p95_ms": 1188.1,
+          "mean_step_ms": {
+            "bm25": 0.3,
+            "dense": 3.5,
+            "embed": 59.3,
+            "rerank": 961.7,
+            "rrf": 0.0
+          }
+        },
+        "semantic": {
+          "P@1": 0.6667,
+          "P@3": 0.4444,
+          "P@5": 0.2667,
+          "R@1": 0.5,
+          "R@3": 1.0,
+          "R@5": 1.0,
+          "MRR": 0.8333,
+          "NDCG@5": 0.877,
+          "p50_ms": 972.4,
+          "p95_ms": 1052.8,
+          "server_p50_ms": 964.9,
+          "server_p95_ms": 1045.7,
+          "mean_step_ms": {
+            "bm25": 0.3,
+            "dense": 3.1,
+            "embed": 58.8,
+            "rerank": 909.4,
+            "rrf": 0.0
+          }
+        }
+      },
+      "queries": [
+        {
+          "id": "e01",
+          "type": "exact_id",
+          "query": "Summarise clause ACP-4.2.",
+          "relevant": [
+            "ACP-4.2"
+          ],
+          "retrieved": [
+            "ACP-4.2",
+            "ACP-4.3",
+            "ACP-3.2",
+            "ACP-4.1",
+            "ACP-3.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            946.2,
+            871.4,
+            941.4
+          ],
+          "server_ms": [
+            939.2,
+            864.3,
+            933.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.86,
+              "dense": 3.31,
+              "bm25": 0.13,
+              "rrf": 0.01,
+              "rerank": 920.85
+            },
+            {
+              "embed": 49.96,
+              "dense": 3.07,
+              "bm25": 0.16,
+              "rrf": 0.01,
+              "rerank": 811.1
+            },
+            {
+              "embed": 53.58,
+              "dense": 3.51,
+              "bm25": 0.16,
+              "rrf": 0.01,
+              "rerank": 876.47
+            }
+          ]
+        },
+        {
+          "id": "e02",
+          "type": "exact_id",
+          "query": "What does HWP-4.3 require?",
+          "relevant": [
+            "HWP-4.3"
+          ],
+          "retrieved": [
+            "HWP-4.3",
+            "HWP-4.2",
+            "HWP-4.1",
+            "HWP-1.1",
+            "HWP-2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            959.8,
+            905.1,
+            943.8
+          ],
+          "server_ms": [
+            952.8,
+            896.9,
+            936.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.6,
+              "dense": 3.04,
+              "bm25": 0.14,
+              "rrf": 0.01,
+              "rerank": 934.97
+            },
+            {
+              "embed": 57.97,
+              "dense": 3.03,
+              "bm25": 0.14,
+              "rrf": 0.01,
+              "rerank": 835.73
+            },
+            {
+              "embed": 64.22,
+              "dense": 3.26,
+              "bm25": 0.18,
+              "rrf": 0.01,
+              "rerank": 869.0
+            }
+          ]
+        },
+        {
+          "id": "e03",
+          "type": "exact_id",
+          "query": "Explain PRC-4.1.",
+          "relevant": [
+            "PRC-4.1"
+          ],
+          "retrieved": [
+            "PRC-4.1",
+            "TEP-4.1",
+            "PRC-1.1",
+            "PRC-3.1",
+            "ACP-4.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            956.8,
+            870.1,
+            940.5
+          ],
+          "server_ms": [
+            950.4,
+            861.2,
+            932.0
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.86,
+              "dense": 3.45,
+              "bm25": 0.11,
+              "rrf": 0.01,
+              "rerank": 931.95
+            },
+            {
+              "embed": 39.18,
+              "dense": 2.58,
+              "bm25": 0.11,
+              "rrf": 0.01,
+              "rerank": 819.35
+            },
+            {
+              "embed": 56.73,
+              "dense": 3.37,
+              "bm25": 0.14,
+              "rrf": 0.01,
+              "rerank": 871.79
+            }
+          ]
+        },
+        {
+          "id": "e04",
+          "type": "negation",
+          "query": "Which expenses are never reimbursed?",
+          "relevant": [
+            "TEP-5.1",
+            "TEP-2.2"
+          ],
+          "retrieved": [
+            "TEP-5.1",
+            "TEP-2.2",
+            "TEP-5.2",
+            "TEP-1.1",
+            "TEP-4.2.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 0.5,
+          "P@3": 0.6666666666666666,
+          "R@3": 1.0,
+          "P@5": 0.4,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            925.9,
+            885.8,
+            913.8
+          ],
+          "server_ms": [
+            919.0,
+            877.8,
+            905.6
+          ],
+          "steps_ms": [
+            {
+              "embed": 14.22,
+              "dense": 3.2,
+              "bm25": 0.28,
+              "rrf": 0.02,
+              "rerank": 901.3
+            },
+            {
+              "embed": 38.78,
+              "dense": 2.46,
+              "bm25": 0.15,
+              "rrf": 0.01,
+              "rerank": 836.37
+            },
+            {
+              "embed": 77.31,
+              "dense": 2.89,
+              "bm25": 0.16,
+              "rrf": 0.01,
+              "rerank": 825.23
+            }
+          ]
+        },
+        {
+          "id": "e05",
+          "type": "negation",
+          "query": "When is a hot work permit not needed?",
+          "relevant": [
+            "HWP-2.2"
+          ],
+          "retrieved": [
+            "HWP-2.2",
+            "HWP-3.2",
+            "HWP-5.1",
+            "HWP-3.3",
+            "HWP-2.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            1020.2,
+            926.5,
+            908.4
+          ],
+          "server_ms": [
+            1013.1,
+            918.9,
+            900.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 13.94,
+              "dense": 3.01,
+              "bm25": 0.22,
+              "rrf": 0.02,
+              "rerank": 995.95
+            },
+            {
+              "embed": 47.19,
+              "dense": 2.97,
+              "bm25": 0.21,
+              "rrf": 0.02,
+              "rerank": 868.47
+            },
+            {
+              "embed": 38.23,
+              "dense": 2.51,
+              "bm25": 0.2,
+              "rrf": 0.02,
+              "rerank": 859.74
+            }
+          ]
+        },
+        {
+          "id": "e06",
+          "type": "negation",
+          "query": "Can contractors walk around the tank farm without an escort?",
+          "relevant": [
+            "ACP-3.3"
+          ],
+          "retrieved": [
+            "ACP-3.3",
+            "ACP-3.1",
+            "HWP-3.2",
+            "HWP-1.2",
+            "ACP-3.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            1057.6,
+            970.3,
+            1016.8
+          ],
+          "server_ms": [
+            1050.7,
+            962.0,
+            1009.3
+          ],
+          "steps_ms": [
+            {
+              "embed": 15.71,
+              "dense": 3.1,
+              "bm25": 0.22,
+              "rrf": 0.01,
+              "rerank": 1031.64
+            },
+            {
+              "embed": 57.94,
+              "dense": 3.14,
+              "bm25": 0.23,
+              "rrf": 0.02,
+              "rerank": 900.65
+            },
+            {
+              "embed": 41.97,
+              "dense": 2.78,
+              "bm25": 0.25,
+              "rrf": 0.02,
+              "rerank": 964.3
+            }
+          ]
+        },
+        {
+          "id": "e07",
+          "type": "numeric",
+          "query": "What is the highest flammable gas reading at which hot work may still start?",
+          "relevant": [
+            "HWP-4.2"
+          ],
+          "retrieved": [
+            "HWP-4.2",
+            "HWP-4.3",
+            "HWP-1.1",
+            "HWP-4.1",
+            "HWP-3.3"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            1239.2,
+            1106.4,
+            1134.7
+          ],
+          "server_ms": [
+            1229.9,
+            1099.3,
+            1125.4
+          ],
+          "steps_ms": [
+            {
+              "embed": 24.11,
+              "dense": 4.0,
+              "bm25": 0.58,
+              "rrf": 0.03,
+              "rerank": 1201.19
+            },
+            {
+              "embed": 63.27,
+              "dense": 3.86,
+              "bm25": 0.36,
+              "rrf": 0.02,
+              "rerank": 1031.77
+            },
+            {
+              "embed": 80.65,
+              "dense": 3.58,
+              "bm25": 0.4,
+              "rrf": 0.02,
+              "rerank": 1040.72
+            }
+          ]
+        },
+        {
+          "id": "e08",
+          "type": "numeric",
+          "query": "How quickly must a 500 litre diesel spill be reported to the regulator?",
+          "relevant": [
+            "IRS-4.2"
+          ],
+          "retrieved": [
+            "IRS-4.2",
+            "IRS-4.1",
+            "ACP-5.2",
+            "IRS-2.3",
+            "IRS-2.2"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            997.7,
+            1098.8,
+            964.6
+          ],
+          "server_ms": [
+            990.3,
+            1091.4,
+            957.2
+          ],
+          "steps_ms": [
+            {
+              "embed": 42.45,
+              "dense": 2.6,
+              "bm25": 0.26,
+              "rrf": 0.02,
+              "rerank": 944.94
+            },
+            {
+              "embed": 69.24,
+              "dense": 3.27,
+              "bm25": 0.39,
+              "rrf": 0.02,
+              "rerank": 1018.51
+            },
+            {
+              "embed": 45.6,
+              "dense": 2.48,
+              "bm25": 0.3,
+              "rrf": 0.02,
+              "rerank": 908.79
+            }
+          ]
+        },
+        {
+          "id": "e09",
+          "type": "numeric",
+          "query": "Who approves an expense claim of INR 75,000?",
+          "relevant": [
+            "TEP-4.2.3"
+          ],
+          "retrieved": [
+            "TEP-4.2.2",
+            "TEP-4.2.1",
+            "TEP-4.2.3",
+            "TEP-6.2",
+            "TEP-1.1"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.3333333333333333,
+          "NDCG@5": 0.5,
+          "latency_ms": [
+            937.2,
+            950.8,
+            869.0
+          ],
+          "server_ms": [
+            924.6,
+            943.7,
+            861.7
+          ],
+          "steps_ms": [
+            {
+              "embed": 77.06,
+              "dense": 3.99,
+              "bm25": 0.35,
+              "rrf": 0.02,
+              "rerank": 843.2
+            },
+            {
+              "embed": 87.32,
+              "dense": 4.66,
+              "bm25": 0.27,
+              "rrf": 0.02,
+              "rerank": 851.43
+            },
+            {
+              "embed": 44.06,
+              "dense": 2.86,
+              "bm25": 0.2,
+              "rrf": 0.02,
+              "rerank": 814.53
+            }
+          ]
+        },
+        {
+          "id": "e10",
+          "type": "semantic",
+          "query": "How often are people's access permissions checked?",
+          "relevant": [
+            "ACP-4.2"
+          ],
+          "retrieved": [
+            "ACP-4.2",
+            "ACP-4.3",
+            "IRS-3.2",
+            "ACP-5.2",
+            "ACP-3.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 1.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            971.2,
+            945.7,
+            921.9
+          ],
+          "server_ms": [
+            964.4,
+            935.1,
+            913.9
+          ],
+          "steps_ms": [
+            {
+              "embed": 50.33,
+              "dense": 3.27,
+              "bm25": 0.2,
+              "rrf": 0.02,
+              "rerank": 910.54
+            },
+            {
+              "embed": 61.9,
+              "dense": 2.87,
+              "bm25": 0.31,
+              "rrf": 0.02,
+              "rerank": 870.04
+            },
+            {
+              "embed": 67.59,
+              "dense": 2.5,
+              "bm25": 0.19,
+              "rrf": 0.01,
+              "rerank": 843.63
+            }
+          ]
+        },
+        {
+          "id": "e11",
+          "type": "semantic",
+          "query": "Will I get into trouble for reporting an accident I saw?",
+          "relevant": [
+            "IRS-5.1"
+          ],
+          "retrieved": [
+            "IRS-2.3",
+            "IRS-5.1",
+            "IRS-2.1",
+            "IRS-1.1",
+            "IRS-2.2"
+          ],
+          "P@1": 0.0,
+          "R@1": 0.0,
+          "P@3": 0.3333333333333333,
+          "R@3": 1.0,
+          "P@5": 0.2,
+          "R@5": 1.0,
+          "MRR": 0.5,
+          "NDCG@5": 0.6309297535714575,
+          "latency_ms": [
+            1082.5,
+            951.9,
+            979.1
+          ],
+          "server_ms": [
+            1075.4,
+            942.8,
+            972.4
+          ],
+          "steps_ms": [
+            {
+              "embed": 53.86,
+              "dense": 2.71,
+              "bm25": 0.31,
+              "rrf": 0.02,
+              "rerank": 1018.46
+            },
+            {
+              "embed": 53.43,
+              "dense": 3.15,
+              "bm25": 0.23,
+              "rrf": 0.02,
+              "rerank": 885.98
+            },
+            {
+              "embed": 44.95,
+              "dense": 2.83,
+              "bm25": 0.31,
+              "rrf": 0.02,
+              "rerank": 924.32
+            }
+          ]
+        },
+        {
+          "id": "e12",
+          "type": "semantic",
+          "query": "How many quotes do I need for a large purchase?",
+          "relevant": [
+            "PRC-3.1",
+            "PRCA-1.1"
+          ],
+          "retrieved": [
+            "PRCA-1.1",
+            "PRC-3.1",
+            "PRC-3.2",
+            "PRCA-1.2",
+            "PRC-4.1"
+          ],
+          "P@1": 1.0,
+          "R@1": 0.5,
+          "P@3": 0.6666666666666666,
+          "R@3": 1.0,
+          "P@5": 0.4,
+          "R@5": 1.0,
+          "MRR": 1.0,
+          "NDCG@5": 1.0,
+          "latency_ms": [
+            972.4,
+            980.2,
+            1008.2
+          ],
+          "server_ms": [
+            964.9,
+            973.4,
+            1001.1
+          ],
+          "steps_ms": [
+            {
+              "embed": 47.52,
+              "dense": 2.76,
+              "bm25": 0.25,
+              "rrf": 0.02,
+              "rerank": 914.38
+            },
+            {
+              "embed": 89.32,
+              "dense": 4.82,
+              "bm25": 0.46,
+              "rrf": 0.02,
+              "rerank": 878.73
+            },
+            {
+              "embed": 59.98,
+              "dense": 2.55,
+              "bm25": 0.21,
+              "rrf": 0.02,
+              "rerank": 938.32
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -244,5 +244,3 @@ assets/          diagrams used in this README
 - The reranker takes about one second per query on CPU, and I only benchmarked `bge-reranker-base`.
 - BM25 lives in memory and is rebuilt after each upload, which is fine for thousands of chunks and not for millions.
 - Uploaded documents cannot be deleted through the API. The tests upload one small document, so the stack runs the evaluation before the tests.
-- No authentication, no OCR, no `.docx`. English only.
-- Latency numbers come from one laptop (i5-12450HX, RTX 3050 6 GB), so look at the ratios more than the absolute values.

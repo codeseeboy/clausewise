@@ -1,8 +1,8 @@
-# Policy Retrieval Benchmark
+# Clausewise
 
-This is my submission for **Option B: Advanced Hybrid Retrieval & Reranking Benchmark**.
+**Find the exact policy clause — and answer only from it.**
 
-It is a small search engine over company policy documents. I wanted to see how much it helps to go from plain vector search, to hybrid search (vector + BM25), to hybrid search with a reranker. So the project runs all three on the same documents and the same questions, and compares them. On top of the search there is a question-answering endpoint where a local LLM answers only from the clauses that were found, and cites them.
+Clausewise is a small search engine over company policy documents, built to measure how much it really helps to go from plain vector search, to hybrid search (vector + BM25), to hybrid search with a reranker. So the project runs all three on the same documents and the same questions, and compares them. On top of the search there is a question-answering endpoint where a local LLM answers only from the clauses that were found, and cites them.
 
 Everything runs locally with one Docker command. No API keys are needed.
 

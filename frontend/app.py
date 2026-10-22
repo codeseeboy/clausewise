@@ -25,7 +25,7 @@ def show_timings(body: dict) -> None:
     st.caption(" | ".join(parts))
 
 
-st.set_page_config(page_title="Policy search", layout="wide")
+st.set_page_config(page_title="Clausewise — policy search", layout="wide")
 st.title("Policy search: vector vs hybrid vs rerank")
 compare_tab, ask_tab, bench_tab = st.tabs(["Compare", "Ask", "Benchmark"])
 

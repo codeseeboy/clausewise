@@ -91,6 +91,6 @@ services:
 
 volumes:
   ollama_models:
-    name: envint_ollama_models
+    name: clausewise_ollama_models
   hf_cache:
-    name: envint_hf_cache
+    name: clausewise_hf_cache

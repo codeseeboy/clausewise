@@ -58,7 +58,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Policy retrieval benchmark", lifespan=lifespan)
+app = FastAPI(title="Clausewise", lifespan=lifespan)
 
 
 @app.get("/health")
